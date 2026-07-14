@@ -1,0 +1,100 @@
+/* Reset & base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f8;
+  color: #333;
+}
+
+/* Section styling */
+.about-section {
+  padding: 60px 20px;
+  animation: fadeIn 1.5s ease-in;
+}
+
+/* Container card */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  animation: slideUp 1.2s ease;
+}
+
+/* Heading */
+.heading {
+  font-size: 2.7rem;
+  color: #ff6600;
+  margin-bottom: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Paragraphs */
+.intro, .description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Highlight */
+.highlight {
+  color: #ff6600;
+  font-weight: 600;
+}
+
+/* Project list */
+.project-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+.project-list li {
+  margin-bottom: 12px;
+  padding-left: 24px;
+  position: relative;
+  font-size: 1rem;
+}
+
+.project-list li::before {
+  content: '✔️';
+  position: absolute;
+  left: 0;
+}
+
+/* Quick facts */
+.quick-facts h3 {
+  color: #ff6600;
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+}
+
+.quick-facts ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.quick-facts li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
